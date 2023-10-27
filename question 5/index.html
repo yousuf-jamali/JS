@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findingIndex() {
+            var input=prompt("enter any string:");
+            var search=prompt("enter the character you want to search");
+            var flag=false;
+            for (var i=0; i<input.length; i++) {
+                if (search===input[i]) {
+                    flag=true;
+                    document.write("found at index " + [i] + "<br>");
+                }
+            }
+            if (flag===false) {
+                document.write("not present");
+            }
+        }
+        findingIndex();
+    </script>
+</body>
+</html>

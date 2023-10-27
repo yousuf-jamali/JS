@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mean,result;
+        function marks() {
+            var chemistry=+prompt("enter your marks in chemistry");
+            var physics=+prompt("enter tour marks in physics:");
+            var maths=+prompt("enter your marks in maths:");
+            function average() {
+                var avg=(chemistry+physics+maths)/3;
+                return avg;
+            }
+            function percentage() {
+                var percent=((chemistry+physics+maths)/300)*100;
+                return percent;
+            }
+            var mean=average();
+            var result=percentage();
+        }
+        marks();
+        document.write("average: " + mean);
+        document.write("<br>" + "percentage: " + result);
+    </script>
+</body>
+</html>
